@@ -1,0 +1,23 @@
+{
+  "meta" : {
+    "purpose" : "show minecraft player stats"
+  },
+  "qualifier" : "lifestats",
+  "targetClass" : "net.minecraft.client.entity.EntityPlayerSP",
+  "instrumentationInstructions" : [
+  {
+    "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.InstrumentationInstructionModel",
+    "qualifier" : "entity.health2",
+    "methodName" : "setPlayerSPHealth",
+    "signatureClasses" : [ "float" ],
+    "handlers" : [ {
+      "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.HandlerModel",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
+      "options" : {
+        "groovy" : "PlayerHealth.groovy"
+      }
+    } ],
+    "enabled" : true,
+    "constructor" : false
+  } ]
+}

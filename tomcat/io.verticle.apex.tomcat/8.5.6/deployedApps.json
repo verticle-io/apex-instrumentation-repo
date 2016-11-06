@@ -1,0 +1,23 @@
+{
+  "meta" : {
+    "purpose" : "show deployed webapps"
+  },
+  "qualifier" : "deployedapps",
+  "targetClass" : "org.apache.catalina.startup.HostConfig",
+  "instrumentationInstructions" : [
+  {
+    "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.InstrumentationInstructionModel",
+    "qualifier" : "tomcat.deployedapps",
+    "methodName" : "deployWARs",
+    "signatureClasses" : ["java.io.File","[Ljava.lang.String;"],
+    "handlers" : [ {
+      "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.HandlerModel",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
+      "options" : {
+        "groovy" : "DeployedApps.groovy"
+      }
+    } ],
+    "enabled" : true,
+    "constructor" : false
+  } ]
+}
