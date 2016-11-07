@@ -1,0 +1,11 @@
+{
+  "assetName" : "minimal",
+  "packageName" : "io.verticle.apex.minimal",
+  "version" : "1.0",
+  "author" : "jens",
+  "authorEmail" : "jens@verticle.io",
+  "authorHomepage" : "http://verticle.io",
+  "fingerprint" : "-3adfee32d",
+  "created" : null,
+  "description" : "This package says Foo?Bar!."
+}
