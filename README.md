@@ -42,7 +42,7 @@ Designed to accelerate application analytics, debugging and monitoring.
 APEX subprojects
 ----------------
 
-* [Collector Agent](http://verticle-io.github.io/apex-toolkit)
+* [Collector Agent](https://github.com/verticle-io/apex-toolkit)
 * [Service Template](https://github.com/verticle-io/apex-service-template)
 * [Instrumentation Repository](https://github.com/verticle-io/apex-instrumentation-repo)
 
