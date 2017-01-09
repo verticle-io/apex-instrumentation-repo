@@ -48,7 +48,7 @@ APEX subprojects
 
 
 
-Please visit the [APEX-Toolkit Site](http://verticle-io.github.io/apex-toolkit) and check out the docs for details.
+Please visit the [APEX-Toolkit Site](http://toolkits.verticle.io) and check out the docs for details.
 
 
 Contributing
