@@ -1,0 +1,23 @@
+{
+  "meta" : {
+    "purpose" : "Say foo bar"
+  },
+  "qualifier" : "minimal",
+  "targetClass" : "com.foo.Bar",
+  "instrumentationInstructions" : [
+  {
+    "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.InstrumentationInstructionModel",
+    "qualifier" : "minimal",
+    "methodName" : "sayFoo",
+    "signatureClasses" : [ "float" ],
+    "handlers" : [ {
+      "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.HandlerModel",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
+      "options" : {
+        "groovy" : "Minimal.groovy"
+      }
+    } ],
+    "enabled" : true,
+    "constructor" : false
+  } ]
+}

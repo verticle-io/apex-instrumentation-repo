@@ -1,0 +1,11 @@
+{
+  "assetName" : "tomcat",
+  "packageName" : "io.verticle.apex.tomcat",
+  "version" : "8.5.6",
+  "author" : "jens",
+  "authorEmail" : "jens@verticle.io",
+  "authorHomepage" : "http://verticle.io",
+  "fingerprint" : "-",
+  "created" : null,
+  "description" : "This package instruments Apache Tomcat 8."
+}

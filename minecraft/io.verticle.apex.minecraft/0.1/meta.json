@@ -1,0 +1,11 @@
+{
+  "assetName" : "minecraft",
+  "packageName" : "io.verticle.apex.minecraft",
+  "version" : "0.1",
+  "author" : "jens",
+  "authorEmail" : "jens@verticle.io",
+  "authorHomepage" : "http://verticle.io",
+  "fingerprint" : "-1i2v38xiwci8",
+  "created" : null,
+  "description" : "This package instruments Minecraft."
+}
