@@ -6,19 +6,19 @@
   "targetClass" : "org.apache.catalina.connector.CoyoteAdapter",
   "instrumentationInstructions" : [
   {
-    "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.InstrumentationInstructionModel",
+    "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.InstrumentationInstructionModel",
     "qualifier" : "tomcat.http11requests",
     "methodName" : "service",
     "signatureClasses" : ["org.apache.coyote.Request","org.apache.coyote.Response"],
     "handlers" : [ {
-      "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.HandlerModel",
+      "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.HandlerModel",
       "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
       "options" : {
         "groovy" : "http11requests.groovy"
       }
     },
     {
-        "@class" : "io.verticle.oss.apex.agent.instrument.repository.model.instrumentation.HandlerModel",
+        "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.HandlerModel",
         "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicPerformanceHandler",
         "options" : {
 
