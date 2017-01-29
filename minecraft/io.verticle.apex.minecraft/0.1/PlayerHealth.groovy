@@ -1,5 +1,5 @@
 // A simple groovy script that gets executed on each instrumented method call
-def execute(){
+def before(){
     println("method executed")
 
     // we have some implicit objects here like 'context' – AdvisorContext containing e.g
@@ -22,5 +22,9 @@ def execute(){
     println("arg 1:" + arg1.toString())
 
     // the message object will now be sent to the apex service for further processing.
+
+}
+
+def after(){
 
 }
