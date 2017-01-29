@@ -12,7 +12,7 @@
     "signatureClasses" : ["org.apache.tomcat.util.net.SocketWrapperBase"],
     "handlers" : [ {
       "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.HandlerModel",
-      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedResultHandler",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
       "options" : {
         "groovy" : "ResponseStats.groovy"
       }

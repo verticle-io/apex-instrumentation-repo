@@ -1,5 +1,5 @@
 // A simple groovy script that gets executed on each instrumented method call
-def execute(){
+def before(){
 
     println("method executed")
 
@@ -17,5 +17,9 @@ def execute(){
 
     println("file:" + arg1.toString())
     println("contexts:" + arg2.toString())
+
+}
+
+def after(){
 
 }
